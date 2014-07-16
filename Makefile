@@ -1,4 +1,4 @@
 all: php
 
 php:
-	docker build -t tutum/docker-php .
+	docker build -t dbruns/dbruns-docker-php .

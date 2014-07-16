@@ -1,4 +1,4 @@
-tutum-docker-php
+dbruns-docker-php
 ================
 
 Base docker image to run PHP applications on Apache
