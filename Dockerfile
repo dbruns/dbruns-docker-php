@@ -3,7 +3,7 @@ MAINTAINER Daniel Bruns <dbruns@gmail.com>
 
 # Install packages
 RUN apt-get update 
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor git apache2 libapache2-mod-php5 php5-ldap php5-mysql php5-gd php-pear php-apc curl
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor git apache2 libapache2-mod-php5 php5-ldap php5-mysql php5-gd php5-curl php-pear php-apc curl
 RUN sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini
 RUN sed -i "s/^display_errors = Off/display_errors = On/g" /etc/php5/apache2/php.ini
 
